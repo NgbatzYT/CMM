@@ -1,6 +1,6 @@
 [
-    { "name": "Captilla", "author": "Ngbatz", "version": "1.0.0" },
-    { "name": "Capuchin Cosmetics", "author": "Ngbatz", "version": "1.2.0" },
-    { "name": "CapuMenu", "author": "Ngbatz", "version": "2.0.1" }
-  ]
+    { "name": "BepInEx", "author": "BepInEx", "version": "5.4.23.2"},
+    { "name": "Captilla", "author": "Ngbatz", "version": "N/A" },
+    { "name": "C4 Capuchin", "author": "Ngbatz", "version": "N/A" }
+]
   

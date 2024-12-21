@@ -1,9 +1,22 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
+    <TargetFramework>net8.0-windows</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+
+    <!-- Set the application type to WPF -->
+    <OutputType>WinExe</OutputType>
+    <UseWPF>true</UseWPF>
+
+    <!-- Enable Windows targeting for building on a non-Windows system -->
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
+
+    <!-- Publish as a single .exe, without extra DLLs -->
+    <PublishSingleFile>true</PublishSingleFile>
+
+    <!-- Set runtime identifier for Windows (use win-x64 or win-x86 depending on your target) -->
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
   </PropertyGroup>
 
 </Project>

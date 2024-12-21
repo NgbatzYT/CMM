@@ -1,0 +1,25 @@
+{
+  "Files": [
+    {
+      "Id": "/workspaces/CMM/CMM/wwwroot/site.css",
+      "PackagePath": "staticwebassets/site.css"
+    },
+    {
+      "Id": "obj/Debug/net8.0/win-x64/staticwebassets/msbuild.CMM.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/win-x64/staticwebassets/msbuild.build.CMM.props",
+      "PackagePath": "build\\CMM.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/win-x64/staticwebassets/msbuild.buildMultiTargeting.CMM.props",
+      "PackagePath": "buildMultiTargeting\\CMM.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/win-x64/staticwebassets/msbuild.buildTransitive.CMM.props",
+      "PackagePath": "buildTransitive\\CMM.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
