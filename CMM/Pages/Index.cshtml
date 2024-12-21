@@ -1,0 +1,55 @@
+@page
+@model CMM.Pages.IndexModel
+@{
+    ViewData["Title"] = "Capuchin Mod Manager";
+}
+
+<div style="display: flex; flex-direction: column; height: 100vh; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f0f0f0;">
+    <!-- Header -->
+    <div style="background-color: #e0e0e0; padding: 10px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); display: flex; align-items: center; justify-content: space-between;">
+        <h1 style="margin: 0; font-size: 20px;">Capuchin Mod Manager</h1>
+        <input type="text" placeholder="Path to Game Folder" style="flex: 1; margin-left: 20px; padding: 5px; font-size: 14px;" />
+        <button style="margin-left: 10px; padding: 5px 10px; font-size: 14px;">...</button>
+    </div>
+
+    <!-- Main Content -->
+    <div style="display: flex; flex: 1; padding: 10px; gap: 10px;">
+        <!-- Plugins/Mods Section -->
+        <div style="flex: 1; background-color: white; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); padding: 10px; overflow-y: auto;">
+            <h2 style="margin-top: 0; font-size: 16px;">Mods</h2>
+            <table border="1" style="width: 100%; border-collapse: collapse;">
+                <thead>
+                    <tr style="background-color: #dcdcdc;">
+                        <th style="text-align: left; padding: 5px;">Select</th>
+                        <th style="text-align: left; padding: 5px;">Name</th>
+                        <th style="text-align: left; padding: 5px;">Author</th>
+                        <th style="text-align: left; padding: 5px;">Version</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var mod in Model.Mods)
+                    {
+                        <tr>
+                            <td style="padding: 5px;"><input type="checkbox" /></td>
+                            <td style="padding: 5px;">@mod.Name</td>
+                            <td style="padding: 5px;">@mod.Author</td>
+                            <td style="padding: 5px;">@mod.Version</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Sidebar Section -->
+        <div style="width: 250px; background-color: white; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); padding: 10px;">
+            <h2 style="margin-top: 0; font-size: 16px;">Actions</h2>
+            <button style="width: 100%; padding: 10px; font-size: 14px; margin-bottom: 10px; background-color: #007bff; color: white; border: none; cursor: pointer;">Install/Update</button>
+            <button style="width: 100%; padding: 10px; font-size: 14px; background-color: #6c757d; color: white; border: none; cursor: pointer;">Mods GitHub</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div style="background-color: #e0e0e0; padding: 5px; text-align: center; font-size: 14px;">
+        <span>Status: Ready</span>
+    </div>
+</div>
